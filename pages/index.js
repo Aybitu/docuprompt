@@ -1,20 +1,19 @@
+// pages/index.js
+
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-white p-8 flex flex-col items-center justify-center text-center">
-      <h1 className="text-5xl font-bold mb-4">DocuPrompt</h1>
-      <p className="text-xl text-gray-700 mb-6 max-w-2xl">
-        Yapay zekâ destekli belge oluşturma aracı. NDA, freelance sözleşmesi, tokenomics özeti gibi belgeleri saniyeler içinde üretin.
+    <div style={{ padding: "4rem", textAlign: "center" }}>
+      <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>DocuPrompt</h1>
+      <p style={{ fontSize: "1.25rem", marginTop: "1rem" }}>
+        Yapay zekâ destekli belge oluşturma aracı.
       </p>
       <Link href="/generate">
-        <Button size="lg">Hemen Deneyin</Button>
+        <button style={{ marginTop: "2rem", padding: "1rem 2rem", fontSize: "1rem" }}>
+          Hemen Deneyin
+        </button>
       </Link>
-
-      <div className="mt-16 text-sm text-gray-400">
-        Hazırlamak zahmetli, DocuPrompt ile saniyeler içinde hazır.
-      </div>
     </div>
   );
 }
